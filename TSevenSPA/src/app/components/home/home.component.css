@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    margin: 2% 2% 0 2%
+}
+
+.content-l{
+    display: flex;
+    width: 50%;
+}
+
+.content-r{
+    display: flex;
+    width: 50%;
+}

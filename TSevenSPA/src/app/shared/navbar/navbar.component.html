@@ -1,0 +1,8 @@
+<nav mat-tab-nav-bar [tabPanel]="tabPanel" backgroundColor="primary">
+    <a routerLink="/home" class="home-icon">
+        <img src="https://team7.gg/wp-content/uploads/2023/03/t7_logo_mauspad_prev-1.png" width="35px" height="35px">
+    </a>
+    <a mat-tab-link routerLink="/events">Events</a>
+    <a mat-tab-link routerLink="/teams">Teams</a>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
