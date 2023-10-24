@@ -1,0 +1,15 @@
+app-navbar .mat-tab-link{
+    opacity: 100%;
+    color: white;
+}
+
+.home-icon{
+    align-items: center;
+    display: flex;
+    margin: 0 1%;
+}
+
+.home-icon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
