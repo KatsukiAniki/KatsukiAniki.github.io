@@ -14,7 +14,6 @@ export class PlayerCardsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.cardType);
     switch (this.cardType) {
       case "VALORANT": {
         this.members = valMembers;
@@ -32,6 +31,14 @@ export class PlayerCardsComponent implements OnInit {
         this.members = creatorMembers;
         break;
       }
+    }
+  }
+
+  closeMemberDetails(index: number) {
+    // Check if the clicked element is not the currently opened member card
+    if (this.buttonUnfoldedIndex === index) {
+      // Logic to close the member details
+      this.buttonUnfoldedIndex = -1; // Or set it to another appropriate value
     }
   }
 

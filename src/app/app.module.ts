@@ -14,7 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCommonModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button'; 
+import { OutsideClickDirective } from './shared/directive/outside-click-directive.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatButtonModule } from '@angular/material/button';
     EventsComponent,
     NavbarComponent,
     LayoutComponent,
-    PlayerCardsComponent
+    PlayerCardsComponent,
+    OutsideClickDirective
   ],
   imports: [
     BrowserModule,
