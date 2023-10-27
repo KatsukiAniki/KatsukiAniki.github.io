@@ -1,0 +1,173 @@
+.team-members-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin: 5% auto 0 auto;
+}
+
+.team {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.team-name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member-card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.member-card.unfolded .temp-name {
+  opacity: 0; /* Hide the temp-name when .unfolded is applied */
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Add transitions for unfolded state */
+.member-card.unfolded .member-image {
+  height: 300px;
+  transition: height 0.3s ease;
+}
+
+
+.member-card.unfolded .unfoldButton {
+  display: block;
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+
+
+.member-image {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Add this line for positioning */
+}
+
+.member-image::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6); /* Background opacity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Text with opacity 1 */
+.temp-name {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color */
+  opacity: 1; /* Text opacity */
+}
+
+.unfoldButton {
+  display: none;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 34%;
+  margin: 0 33%;
+}
+
+.member-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.member-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: transform 0.2s;
+}
+
+.social-button.twitter {
+  background-color: #1DA1F2;
+}
+
+.social-button.twitch {
+  background-color: #9147FF;
+}
+
+.social-button.youtube {
+  background-color: #FF0000;
+}
+
+.social-button.tiktok {
+  background-color: #000;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+}
+
+.unfoldButton:hover{
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+
+.member-image:hover .unfoldButton {
+  transition: 0.3s ease;
+  display: block;
+  transform: scale(1.03);
+}
+
+
+/* 
+.member-image:hover ~ .member-details {
+  display: block;
+}
+*/
+
+.member-image:hover {
+  transition: 0.3s;
+  transform: scale(1.03);
+}

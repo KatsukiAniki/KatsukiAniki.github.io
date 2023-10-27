@@ -1,0 +1,27 @@
+.valImg{
+    width: 45px;
+    height: 45px;
+}
+
+.valGcImg{
+    width: 35px;
+    width: 35px;
+}
+
+.leagueImg{
+    margin-left: 5%;
+    width: 30px;
+    width: 30px;
+}
+
+.creatorImg{
+    margin-left: 3%;
+    width: 35px;
+    width: 50px;
+}
+
+.mat-tab-label {
+    margin-top: 5%;
+    font-size: 30px;
+    height: 50px !important;
+}
