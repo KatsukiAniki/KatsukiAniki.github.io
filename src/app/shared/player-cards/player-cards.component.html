@@ -1,0 +1,37 @@
+<div class="team-members-container">
+  <ng-container *ngFor="let member of members; let i = index">
+    <div class="member-card" [class.hide-card]="buttonUnfoldedIndex !== i" appOutsideClick
+      (appOutsideClick)="closeMemberDetails(i)">
+      <div class="member-image" [class.member-image-hover]="buttonUnfoldedIndex === i"
+        [style.background-image]="'url(' + member.img + ')'">
+        <h2 class="temp-name" [class.hidden]="buttonUnfoldedIndex === i">{{member.name}}</h2>
+        <button (click)="buttonUnfoldClick(i)" class="unfoldButton" mat-raised-button
+          [class.hidden]="buttonUnfoldedIndex === i">
+          Unfold
+        </button>
+      </div>
+
+      <div class="member-details">
+        <h2 class="member-name">{{member.name}}</h2>
+        <div class="social-buttons">
+          <a *ngIf="member.socialMedia.twitter" href="{{member.socialMedia.twitter}}" target="_blank"
+            class="social-button twitter">
+            <img src="/assets/img/X_logo_2023_(white).png" width="30px">
+          </a>
+          <a *ngIf="member.socialMedia.twitch" href="{{member.socialMedia.twitch}}" target="_blank"
+            class="social-button twitch">
+            <img src="/assets/img/580b57fcd9996e24bc43c540.png" width="30px">
+          </a>
+          <a *ngIf="member.socialMedia.youtube" href="{{member.socialMedia.youtube}}" target="_blank"
+            class="social-button youtube">
+            <mat-icon>youtube</mat-icon>
+          </a>
+          <a *ngIf="member.socialMedia.tiktok" href="{{member.socialMedia.tiktok}}" target="_blank"
+            class="social-button tiktok">
+            <mat-icon>tiktok</mat-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -13,3 +13,11 @@ app-navbar .mat-tab-link{
     cursor: pointer;
     opacity: 0.8;
 }
+
+.selected-tab {
+    opacity: 1;
+}
+
+.mat-tab-nav-bar{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.8);
+}
