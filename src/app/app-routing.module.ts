@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { EventsComponent } from './components/events/events.component';
 import { TeamsComponent } from './components/teams/teams.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch: 'full'},
@@ -17,6 +17,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
 })
 export class AppRoutingModule { }
