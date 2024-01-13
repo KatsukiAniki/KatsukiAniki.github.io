@@ -15,9 +15,9 @@ export class TeamsComponent implements OnInit, AfterViewInit {
 
   tabs = [
     { label: 'VALORANT', img: 'https://team7.gg/wp-content/uploads/2023/07/vecteezy_valorant-logo-png-transparent_19763186_925.png', class: "valImg"},
-    { label: 'VALO GC', img: 'https://team7.gg/wp-content/uploads/2023/07/image-fotor-bg-remover-20230718182332.png', class: "valGcImg"},
-    { label: 'LEAGUE', img: 'https://team7.gg/wp-content/uploads/2023/07/pngwing.com_.png', class: "leagueImg"},
-    { label: 'CREATOR', img: 'https://team7.gg/wp-content/uploads/2023/07/t-fotor-bg-remover-20230720173351.png', class: "creatorImg"}
+    // { label: 'VALO GC', img: 'https://team7.gg/wp-content/uploads/2023/07/image-fotor-bg-remover-20230718182332.png', class: "valGcImg"},
+    // { label: 'LEAGUE', img: 'https://team7.gg/wp-content/uploads/2023/07/pngwing.com_.png', class: "leagueImg"},
+    // { label: 'CREATOR', img: 'https://team7.gg/wp-content/uploads/2023/07/t-fotor-bg-remover-20230720173351.png', class: "creatorImg"}
   ];
 
   ngAfterViewInit() {

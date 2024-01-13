@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { valMembers, valGcMembers, lolMembers, creatorMembers } from 'src/app/member-data/members';
+import { valMembers} from 'src/app/member-data/members';
 
 @Component({
   selector: 'app-player-cards',
@@ -19,18 +19,18 @@ export class PlayerCardsComponent implements OnInit {
         this.members = valMembers;
         break;
       }
-      case "VALO GC": {
-        this.members = valGcMembers;
-        break;
-      }
-      case "LEAGUE": {
-        this.members = lolMembers;
-        break;
-      }
-      case "CREATOR": {
-        this.members = creatorMembers;
-        break;
-      }
+      // case "VALO GC": {
+      //   this.members = valGcMembers;
+      //   break;
+      // }
+      // case "LEAGUE": {
+      //   this.members = lolMembers;
+      //   break;
+      // }
+      // case "CREATOR": {
+      //   this.members = creatorMembers;
+      //   break;
+      // }
     }
   }
 

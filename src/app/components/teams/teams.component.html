@@ -1,5 +1,10 @@
 <mat-tab-group mat-align-tabs="center" color="accent" backgroundColor="primary" [selectedIndex]="selectedTabIndex"
     (selectedTabChange)="onTabChange($event)">
+    <!-- <mat-tab *ngFor="let tab of tabs">
+        <ng-template mat-tab-label>{{tab.label}}<img class={{tab.class}}
+                src={{tab.img}}></ng-template>
+        <app-player-cards cardType={{tab.label}}></app-player-cards>
+    </mat-tab> -->
     <mat-tab *ngFor="let tab of tabs">
         <ng-template mat-tab-label>{{tab.label}}<img class={{tab.class}}
                 src={{tab.img}}></ng-template>
