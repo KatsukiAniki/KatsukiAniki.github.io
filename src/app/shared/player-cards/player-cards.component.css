@@ -35,7 +35,6 @@
 
 .member-card.unfolded .temp-name {
   opacity: 0;
-  /* Hide the temp-name when .unfolded is applied */
   transition: opacity 0.3s ease;
 }
 
@@ -54,7 +53,6 @@
 .member-image::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
-  /* Background opacity */
   position: absolute;
   top: 0;
   left: 0;
@@ -66,7 +64,6 @@
   transform: scale(1.03) !important;
 }
 
-/* Text with opacity 1 */
 .temp-name {
   display: flex;
   position: absolute;
@@ -77,9 +74,8 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  /* Text color */
   opacity: 1;
-  /* Text opacity */
+  font-size: 1.4rem;
 }
 
 .unfoldButton {
@@ -89,7 +85,7 @@
   left: 0;
   width: 34%;
   margin: 0 33%;
-  transform: scale(1); /* Start with the original scale */
+  transform: scale(1);
 }
 
 .member-details {
@@ -123,7 +119,7 @@
   padding: 10px;
   margin: 0 10px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 35%;
   font-size: 24px;
   transition: transform 0.2s;
 }
@@ -142,6 +138,7 @@
 
 .social-button.tiktok {
   background-color: #000;
+  padding: 0 6%;
 }
 
 .social-button:hover {
@@ -167,7 +164,6 @@
   transform: scale(1.03);
 }
 
-/* Add a transition back to the original state */
 .member-image:not(:hover) {
   transform: scale(1);
 }
@@ -178,5 +174,4 @@
     align-items: center;
     gap: 20px;
   }
-
 }

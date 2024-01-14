@@ -3,7 +3,7 @@ import { Member } from "./member";
 export const valMembers: Member[] = [
   {
     name: "KatsukiAniki",
-    img: "/assets/img/ippo-pb.jpg",
+    img: "/assets/img/J4Background.png",
     socialMedia: {
       twitter: "https://twitter.com/KatsukiAniki",
       tiktok: "",
@@ -12,42 +12,42 @@ export const valMembers: Member[] = [
     },
   },
   {
-    name: "Player 2 Valo",
-    img: "/assets/img/1920x1080example.png",
+    name: "Scelzer",
+    img: "/assets/img/J4Background.png",
     socialMedia: {
-      twitter: "",
+      twitter: "https://twitter.com/Scottymottie",
       tiktok: "",
-      twitch: "",
+      twitch: "https://www.twitch.tv/scelzer",
       youtube: "",
     },
   },
   {
-    name: "Player 3 Valo",
-    img: "/assets/img/1920x1080example.png",
+    name: "Babyilan",
+    img: "/assets/img/J4Background.png",
     socialMedia: {
-      twitter: "",
+      twitter: "https://twitter.com/Babyilan7",
       tiktok: "",
-      twitch: "",
+      twitch: "https://www.twitch.tv/ilan_og",
       youtube: "",
     },
   },
   {
-    name: "Player 4 Valo",
-    img: "/assets/img/1920x1080example.png",
+    name: "requ1337",
+    img: "/assets/img/J4Background.png",
     socialMedia: {
-      twitter: "",
-      tiktok: "",
-      twitch: "",
+      twitter: "https://twitter.com/requ1337",
+      tiktok: "https://www.tiktok.com/@requ_val?lang=de-DE",
+      twitch: "https://www.twitch.tv/requ62",
       youtube: "",
     },
   },
   {
-    name: "Player 5 Valo",
-    img: "/assets/img/1920x1080example.png",
+    name: "Danzo",
+    img: "/assets/img/J4Background.png",
     socialMedia: {
-      twitter: "",
+      twitter: "https://twitter.com/T7_Danzo",
       tiktok: "",
-      twitch: "",
+      twitch: "https://www.twitch.tv/baumdaniel",
       youtube: "",
     },
   },

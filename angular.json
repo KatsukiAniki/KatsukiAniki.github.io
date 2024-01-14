@@ -38,8 +38,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kb",
+                  "maximumError": "6kb"
                 }
               ],
               "fileReplacements": [
@@ -65,18 +65,21 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "TSevenSPA:build:production"
+              "browserTarget": "TSevenSPA:build:production"
             },
             "development": {
-              "buildTarget": "TSevenSPA:build:development"
-            }
+              "browserTarget": "TSevenSPA:build:development"
+            },
+            "options": {
+              "browserTarget": "TSevenSPA:build"
+          }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "TSevenSPA:build"
+            "browserTarget": "TSevenSPA:build"
           }
         },
         "test": {
