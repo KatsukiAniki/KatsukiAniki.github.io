@@ -16,6 +16,7 @@ import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-c
 import {MatIconModule} from '@angular/material/icon';
 import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button'; 
 import { OutsideClickDirective } from './shared/directive/outside-click-directive.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OutsideClickDirective } from './shared/directive/outside-click-directiv
     NavbarComponent,
     LayoutComponent,
     PlayerCardsComponent,
-    OutsideClickDirective
+    OutsideClickDirective,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { valMembers} from 'src/app/member-data/members';
+import { Member } from 'src/app/member-data/member';
+import { valMainMembers, valSubMembers} from 'src/app/member-data/members';
 
 @Component({
   selector: 'app-player-cards',
@@ -8,15 +9,18 @@ import { valMembers} from 'src/app/member-data/members';
 })
 export class PlayerCardsComponent implements OnInit {
   @Input() cardType: string = "";
-  members: any[] = [];
-  buttonUnfoldedIndex: number = -1; // Initialize to -1 to indicate no unfolded card
+  mainMembers: Member[] = [];
+  subMembers: Member[] = [];
+  mainButtonUnfoldedIndex: number = -1;
+  subButtonUnfoldedIndex: number = -1;
 
   constructor() {}
 
   ngOnInit(): void {
     switch (this.cardType) {
       case "VALORANT": {
-        this.members = valMembers;
+        this.mainMembers = valMainMembers;
+        this.subMembers = valSubMembers;
         break;
       }
       // case "VALO GC": {
@@ -34,21 +38,31 @@ export class PlayerCardsComponent implements OnInit {
     }
   }
 
-  closeMemberDetails(index: number) {
-    // Check if the clicked element is not the currently opened member card
-    if (this.buttonUnfoldedIndex === index) {
-      // Logic to close the member details
-      this.buttonUnfoldedIndex = -1; // Or set it to another appropriate value
+  closeMemberDetails(index: number, isMain: boolean) {
+    if (isMain) {
+      if (this.mainButtonUnfoldedIndex === index) {
+        this.mainButtonUnfoldedIndex = -1;
+      }
+    } else {
+      if (this.subButtonUnfoldedIndex === index) {
+        this.subButtonUnfoldedIndex = -1;
+      }
     }
   }
 
-  public buttonUnfoldClick = (index: number) => {
-    if (this.buttonUnfoldedIndex === index) {
-      // Clicked on an already unfolded card, so close it
-      this.buttonUnfoldedIndex = -1;
+  public buttonUnfoldClick(index: number, isMain: boolean) {
+    if (isMain) {
+      if (this.mainButtonUnfoldedIndex === index) {
+        this.mainButtonUnfoldedIndex = -1;
+      } else {
+        this.mainButtonUnfoldedIndex = index;
+      }
     } else {
-      // Clicked on a different card, unfold it
-      this.buttonUnfoldedIndex = index;
+      if (this.subButtonUnfoldedIndex === index) {
+        this.subButtonUnfoldedIndex = -1;
+      } else {
+        this.subButtonUnfoldedIndex = index;
+      }
     }
   }
 }

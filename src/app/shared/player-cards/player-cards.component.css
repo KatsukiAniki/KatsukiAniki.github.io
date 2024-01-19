@@ -1,8 +1,22 @@
-.team-members-container {
+.team-main-members-container {
   display: flex;
   justify-content: center;
   gap: 2%;
   margin: 5% auto 0 auto;
+}
+
+.team-sub-members-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin: 0 auto 0 auto;
+}
+
+.sub-title{
+  padding: 5%;
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
 }
 
 .team {
@@ -169,7 +183,12 @@
 }
 
 @media (max-width: 1000px) {
-  .team-members-container {
+  .team-main-members-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .team-sub-members-container{
     flex-direction: column;
     align-items: center;
     gap: 20px;
