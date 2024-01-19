@@ -1,6 +1,6 @@
 import { Member } from "./member";
 
-export const valMembers: Member[] = [
+export const valMainMembers: Member[] = [
   {
     name: "KatsukiAniki",
     img: "/assets/img/J4Background.png",
@@ -43,6 +43,19 @@ export const valMembers: Member[] = [
   },
   {
     name: "Danzo",
+    img: "/assets/img/J4Background.png",
+    socialMedia: {
+      twitter: "https://twitter.com/T7_Danzo",
+      tiktok: "",
+      twitch: "https://www.twitch.tv/baumdaniel",
+      youtube: "",
+    },
+  },
+];
+
+export const valSubMembers: Member[] = [
+  {
+    name: "Eric",
     img: "/assets/img/J4Background.png",
     socialMedia: {
       twitter: "https://twitter.com/T7_Danzo",
