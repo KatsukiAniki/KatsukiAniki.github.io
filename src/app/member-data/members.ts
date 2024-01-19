@@ -58,9 +58,9 @@ export const valSubMembers: Member[] = [
     name: "Eric",
     img: "/assets/img/J4Background.png",
     socialMedia: {
-      twitter: "https://twitter.com/T7_Danzo",
+      twitter: "https://twitter.com/NotEr1c",
       tiktok: "",
-      twitch: "https://www.twitch.tv/baumdaniel",
+      twitch: "https://twitch.tv/not__eric",
       youtube: "",
     },
   },
