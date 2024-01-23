@@ -1,0 +1,43 @@
+/* footer.component.scss */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(100, 100, 100, 0.8);
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .copy{
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .j4-socials{
+    display: flex;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Adjust the styling for mat-icon as needed */
+  mat-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Style mat-icon on hover if desired */
+  mat-icon:hover {
+    color: lightblue;
+  }
+  

@@ -17,6 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button'; 
 import { OutsideClickDirective } from './shared/directive/outside-click-directive.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     LayoutComponent,
     PlayerCardsComponent,
     OutsideClickDirective,
-    AboutUsComponent
+    AboutUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     MatCommonModule,
     MatCardModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [LayoutComponent]
